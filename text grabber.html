@@ -1,0 +1,166 @@
+<html>
+
+<head>
+    <title>text grabber</title>
+
+    <!-- 
+
+        add blade, elijah, bruce
+
+        upload to jsfiddle or github so i can access on my laptop
+
+    -->
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
+
+        body {
+            font-family: ABeeZee;
+            font-size: 20px;
+            background-color: #1e1e2e;
+            color: #cdd6f4;
+        }
+
+        button {
+            font-family: ABeeZee;
+            font-size: 15px;
+
+            background-color: #f5c2e7;
+            color: #181825;
+            border-radius: 5px;
+            padding: 5px;
+            width: 80px;
+        }
+
+        input {
+            font-family: ABeeZee;
+            font-size: 15px;
+            color: black;
+
+            width: 225px;
+        }
+
+        #container {
+            width: 500px;
+            height: auto;
+            overflow: auto;
+            position: absolute;
+            left: 42%;
+            top: 20%;
+        }
+
+        .muse {
+            margin-bottom: 20px;
+        }
+
+        .museName {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="clint" class="muse">
+            <p class="museName">clint</p>
+            <input type="text" value="<span style='color: #6a5d80'>" id="clintInput">
+            <button onclick="clintFunction()">Copy</button>
+        </div>
+
+
+        <div id="daniel" class="muse">
+            <p class="museName">daniel</p>
+            <input type="text" value="<span style='color: #317fe6'>" id="danielInput">
+            <button onclick="danielFunction()">Copy</button>
+        </div>
+
+
+        <div id="fred" class="muse">
+            <p class="museName">fred</p>
+            <input type="text" value="<span style='color: #F97F51'>" id="fredInput">
+            <button onclick="fredFunction()">Copy</button>
+        </div>
+
+        <div id="elijah" class="muse">
+            <p class="museName">elijah</p>
+            <input type="text" value="<span style='color: #990000'>" id="elijahInput">
+            <button onclick="elijahFunction()">Copy</button>
+        </div>
+
+        <div id="bruce" class="muse">
+            <p class="museName">bruce</p>
+            <input type="text" value="<span style='color: #f9ca24'>" id="bruceInput">
+            <button onclick="bruceFunction()">Copy</button>
+        </div>
+
+        <div id="blade" class="muse">
+            <p class="museName">blade</p>
+            <input type="text" value="<span style='color: #1f567a'>" id="bladeInput">
+            <button onclick="bladeFunction()">Copy</button>
+        </div>
+
+<!--
+        <div id="steve" class="muse">
+            <p class="museName">steve</p>
+            <input type="text" value="<span style='color: #1e8bc3'>" id="steveInput">
+            <button onclick="steveFunction()">Copy</button>
+        </div>
+    -->
+    </div>
+
+    <script>
+        function clintFunction() {
+            var copyText = document.getElementById("clintInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function danielFunction() {
+            var copyText = document.getElementById("danielInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+        
+        function fredFunction() {
+            var copyText = document.getElementById("fredInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function elijahFunction() {
+            var copyText = document.getElementById(elijahInput);
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function bruceFunction() {
+            var copyText = document.getElementById(bruceInput);
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function bladeFunction() {
+            var copyText = document.getElementById(bladeInput);
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+        
+        function steveFunction() {
+            var copyText = document.getElementById("steveInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+    </script>
+
+</body>
+
+</html>

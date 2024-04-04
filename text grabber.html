@@ -5,9 +5,7 @@
 
     <!-- 
 
-        add blade, elijah, bruce
-
-        upload to jsfiddle or github so i can access on my laptop
+        to do
 
     -->
 
@@ -63,30 +61,11 @@
 <body>
 
     <div id="container">
-        <div id="clint" class="muse">
-            <p class="museName">clint</p>
-            <input type="text" value="<span style='color: #6a5d80'>" id="clintInput">
-            <button onclick="clintFunction()">Copy</button>
-        </div>
 
-
-        <div id="daniel" class="muse">
-            <p class="museName">daniel</p>
-            <input type="text" value="<span style='color: #317fe6'>" id="danielInput">
-            <button onclick="danielFunction()">Copy</button>
-        </div>
-
-
-        <div id="fred" class="muse">
-            <p class="museName">fred</p>
-            <input type="text" value="<span style='color: #F97F51'>" id="fredInput">
-            <button onclick="fredFunction()">Copy</button>
-        </div>
-
-        <div id="elijah" class="muse">
-            <p class="museName">elijah</p>
-            <input type="text" value="<span style='color: #990000'>" id="elijahInput">
-            <button onclick="elijahFunction()">Copy</button>
+        <div id="blade" class="muse">
+            <p class="museName">blade</p>
+            <input type="text" value="<span style='color: #1f567a'>" id="bladeInput">
+            <button onclick="bladeFunction()">Copy</button>
         </div>
 
         <div id="bruce" class="muse">
@@ -95,10 +74,34 @@
             <button onclick="bruceFunction()">Copy</button>
         </div>
 
-        <div id="blade" class="muse">
-            <p class="museName">blade</p>
-            <input type="text" value="<span style='color: #1f567a'>" id="bladeInput">
-            <button onclick="bladeFunction()">Copy</button>
+        <div id="clint" class="muse">
+            <p class="museName">clint</p>
+            <input type="text" value="<span style='color: #6a5d80'>" id="clintInput">
+            <button onclick="clintFunction()">Copy</button>
+        </div>
+
+        <div id="daniel" class="muse">
+            <p class="museName">daniel</p>
+            <input type="text" value="<span style='color: #317fe6'>" id="danielInput">
+            <button onclick="danielFunction()">Copy</button>
+        </div>
+
+        <div id="elijah" class="muse">
+            <p class="museName">elijah</p>
+            <input type="text" value="<span style='color: #990000'>" id="elijahInput">
+            <button onclick="elijahFunction()">Copy</button>
+        </div>
+
+        <div id="fred" class="muse">
+            <p class="museName">fred</p>
+            <input type="text" value="<span style='color: #F97F51'>" id="fredInput">
+            <button onclick="fredFunction()">Copy</button>
+        </div>
+
+        <div id="stella" class="muse">
+            <p class="museName">stella</p>
+            <input type="text" value="<span style='color: #f18846'>" id="stellaInput">
+            <button onclick="stellaFunction()">Copy</button>
         </div>
 
 <!--
@@ -153,6 +156,13 @@
             document.execCommand("copy");
         }
         
+        function stellaFunction() {
+            var copyText = document.getElementById(stellaInput);
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
         function steveFunction() {
             var copyText = document.getElementById("steveInput");
             copyText.select();

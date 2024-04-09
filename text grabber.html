@@ -62,6 +62,12 @@
 
     <div id="container">
 
+        <div id="amy" class="muse">
+            <p class="museName">amy</p>
+            <input type="text" value="<span style='color: 8D2F47'>" id="amyInput">
+            <button onclick="amyFunction()">Copy</button>
+        </div>
+        
         <div id="blade" class="muse">
             <p class="museName">blade</p>
             <input type="text" value="<span style='color: #1f567a'>" id="bladeInput">
@@ -84,12 +90,6 @@
             <p class="museName">daniel</p>
             <input type="text" value="<span style='color: #317fe6'>" id="danielInput">
             <button onclick="danielFunction()">Copy</button>
-        </div>
-
-        <div id="elijah" class="muse">
-            <p class="museName">elijah</p>
-            <input type="text" value="<span style='color: #990000'>" id="elijahInput">
-            <button onclick="elijahFunction()">Copy</button>
         </div>
 
         <div id="fred" class="muse">
@@ -135,13 +135,6 @@
             document.execCommand("copy");
         }
 
-        function elijahFunction() {
-            var copyText = document.getElementById(elijahInput);
-            copyText.select();
-            copyText.setSelectionRange(0, 99999)
-            document.execCommand("copy");
-        }
-
         function bruceFunction() {
             var copyText = document.getElementById(bruceInput);
             copyText.select();
@@ -158,6 +151,13 @@
         
         function stellaFunction() {
             var copyText = document.getElementById(stellaInput);
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function amyFunction() {
+            var copyText = document.getElementById("amyInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");

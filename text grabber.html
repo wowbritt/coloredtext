@@ -114,6 +114,27 @@
     </div>
 
     <script>
+        function amyFunction() {
+            var copyText = document.getElementById("amyInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function bladeFunction() {
+            var copyText = document.getElementById("bladeInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function bruceFunction() {
+            var copyText = document.getElementById("bruceInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+        
         function clintFunction() {
             var copyText = document.getElementById("clintInput");
             copyText.select();
@@ -134,41 +155,14 @@
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");
         }
-
-        function bruceFunction() {
-            var copyText = document.getElementById('bruceInput');
-            copyText.select();
-            copyText.setSelectionRange(0, 99999)
-            document.execCommand("copy");
-        }
-
-        function bladeFunction() {
-            var copyText = document.getElementById(bladeInput);
-            copyText.select();
-            copyText.setSelectionRange(0, 99999)
-            document.execCommand("copy");
-        }
         
         function stellaFunction() {
-            var copyText = document.getElementById(stellaInput);
+            var copyText = document.getElementById("stellaInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");
         }
 
-        function amyFunction() {
-            var copyText = document.getElementById("amyInput");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999)
-            document.execCommand("copy");
-        }
-
-        function steveFunction() {
-            var copyText = document.getElementById("steveInput");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999)
-            document.execCommand("copy");
-        }
     </script>
 
 </body>

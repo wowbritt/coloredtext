@@ -98,6 +98,12 @@
             <button onclick="fredFunction()">Copy</button>
         </div>
 
+        <div id="genji" class="muse">
+            <p class="museName">genji</p>
+            <input type="text" value="<span style='color: #B6EF13'>" id="genjiInput">
+            <button onclick="genjiFunction()">Copy</button>
+        </div>
+
         <div id="stella" class="muse">
             <p class="museName">stella</p>
             <input type="text" value="<span style='color: #f18846'>" id="stellaInput">
@@ -156,6 +162,13 @@
             document.execCommand("copy");
         }
         
+        function genjiFunction() {
+            var copyText = document.getElementById("genjiInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
         function stellaFunction() {
             var copyText = document.getElementById("stellaInput");
             copyText.select();

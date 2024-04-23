@@ -104,6 +104,12 @@
             <button onclick="genjiFunction()">Copy</button>
         </div>
 
+        <div id="levi" class="muse">
+            <p class="museName">levi</p>
+            <input type="text" value="<span style='color: #395238'>" id="leviInput">
+            <button onclick="leviFunction()">Copy</button>
+        </div>
+
         <div id="pixie" class="muse">
             <p class="museName">pixie</p>
             <input type="text" value="<span style='color: #E37BAC'>" id="pixieInput">
@@ -170,6 +176,13 @@
         
         function genjiFunction() {
             var copyText = document.getElementById("genjiInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function leviFunction() {
+            var copyText = document.getElementById("leviInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");

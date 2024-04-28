@@ -80,6 +80,12 @@
             <button onclick="clintFunction()">Copy</button>
         </div>
 
+        <div id="cassidy" class="muse">
+            <p class="museName">cole cassidy</p>
+            <input type="text" value="<span style='color: #BF4A24'>" id="cassidyInput">
+            <button onclick="cassidyFunction()">Copy</button>
+        </div>
+
         <div id="daniel" class="muse">
             <p class="museName">daniel</p>
             <input type="text" value="<span style='color: #317fe6'>" id="danielInput">
@@ -98,16 +104,16 @@
             <button onclick="fredFunction()">Copy</button>
         </div>
 
-        <div id="genji" class="muse">
-            <p class="museName">genji</p>
-            <input type="text" value="<span style='color: #B6EF13'>" id="genjiInput">
-            <button onclick="genjiFunction()">Copy</button>
-        </div>
-
         <div id="levi" class="muse">
             <p class="museName">levi</p>
             <input type="text" value="<span style='color: #395238'>" id="leviInput">
             <button onclick="leviFunction()">Copy</button>
+        </div>
+
+        <div id="lucy" class="muse">
+            <p class="museName">lucy</p>
+            <input type="text" value="<span style='color: #447AB9'>" id="lucyInput">
+            <button onclick="lucyFunction()">Copy</button>
         </div>
 
         <div id="pixie" class="muse">
@@ -153,6 +159,13 @@
             document.execCommand("copy");
         }
 
+        function cassidyFunction() {
+            var copyText = document.getElementById("cassidyInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
         function danielFunction() {
             var copyText = document.getElementById("danielInput");
             copyText.select();
@@ -174,15 +187,16 @@
             document.execCommand("copy");
         }
         
-        function genjiFunction() {
-            var copyText = document.getElementById("genjiInput");
+
+        function leviFunction() {
+            var copyText = document.getElementById("leviInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");
         }
 
-        function leviFunction() {
-            var copyText = document.getElementById("leviInput");
+        function lucyFunction() {
+            var copyText = document.getElementById("lucyInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");

@@ -62,12 +62,18 @@
 
     <div id="container">
 
-        <div id="amy" class="muse">
-            <p class="museName">amy</p>
-            <input type="text" value="<span style='color: #8D2F47'>" id="amyInput">
-            <button onclick="amyFunction()">Copy</button>
+        <div id="andrew" class="muse">
+            <p class="museName">andrew</p>
+            <input type="text" value="<span style='color: #893A35'>" id="andrewInput">
+            <button onclick="andrewFunction()">Copy</button>
         </div>
 
+        <div id="boothill" class="muse">
+            <p class="museName">boothill</p>
+            <input type="text" value="<span style='color: #C2032F'>" id="boothillInput">
+            <button onclick="boothillFunction()">Copy</button>
+        </div>
+        
         <div id="bruce" class="muse">
             <p class="museName">bruce</p>
             <input type="text" value="<span style='color: #f9ca24'>" id="bruceInput">
@@ -92,28 +98,22 @@
             <button onclick="danielFunction()">Copy</button>
         </div>
 
-        <div id="danny" class="muse">
-            <p class="museName">danny</p>
-            <input type="text" value="<span style='color: #b92216'>" id="dannyInput">
-                <button onclick="dannyFunction()">Copy</button>
-        </div>
-
-        <div id="fred" class="muse">
-            <p class="museName">fred</p>
-            <input type="text" value="<span style='color: #F97F51'>" id="fredInput">
-            <button onclick="fredFunction()">Copy</button>
+        <div id="irey" class="muse">
+            <p class="museName">irey</p>
+            <input type="text" value="<span style='color: #b92216'>" id="ireyInput">
+                <button onclick="ireyFunction()">Copy</button>
         </div>
 
         <div id="levi" class="muse">
             <p class="museName">levi</p>
-            <input type="text" value="<span style='color: #395238'>" id="leviInput">
+            <input type="text" value="<span style='color: #ea8685'>" id="leviInput">
             <button onclick="leviFunction()">Copy</button>
         </div>
 
-        <div id="lucy" class="muse">
-            <p class="museName">lucy</p>
-            <input type="text" value="<span style='color: #447AB9'>" id="lucyInput">
-            <button onclick="lucyFunction()">Copy</button>
+        <div id="margaery" class="muse">
+            <p class="museName">margaery</p>
+            <input type="text" value="<span style='color: #c44569'>" id="margaeryInput">
+            <button onclick="margaeryFunction()">Copy</button>
         </div>
 
         <div id="pixie" class="muse">
@@ -122,11 +122,6 @@
             <button onclick="pixieFunction()">Copy</button>
         </div>
 
-        <div id="stella" class="muse">
-            <p class="museName">stella</p>
-            <input type="text" value="<span style='color: #f18846'>" id="stellaInput">
-            <button onclick="stellaFunction()">Copy</button>
-        </div>
 
 <!--
         <div id="steve" class="muse">
@@ -138,13 +133,6 @@
     </div>
 
     <script>
-        function amyFunction() {
-            var copyText = document.getElementById("amyInput");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999)
-            document.execCommand("copy");
-        }
-
         function bruceFunction() {
             var copyText = document.getElementById("bruceInput");
             copyText.select();
@@ -173,20 +161,12 @@
             document.execCommand("copy");
         }
 
-        function dannyFunction() {
-            var copyText = document.getElementById("dannyInput");
+        function ireyFunction() {
+            var copyText = document.getElementById("ireyInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");
         }
-        
-        function fredFunction() {
-            var copyText = document.getElementById("fredInput");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999)
-            document.execCommand("copy");
-        }
-        
 
         function leviFunction() {
             var copyText = document.getElementById("leviInput");
@@ -195,8 +175,8 @@
             document.execCommand("copy");
         }
 
-        function lucyFunction() {
-            var copyText = document.getElementById("lucyInput");
+        function margaeryFunction() {
+            var copyText = document.getElementById("margaeryInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");
@@ -209,12 +189,6 @@
             document.execCommand("copy");
         }
 
-        function stellaFunction() {
-            var copyText = document.getElementById("stellaInput");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999)
-            document.execCommand("copy");
-        }
 
     </script>
 

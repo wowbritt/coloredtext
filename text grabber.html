@@ -122,6 +122,12 @@
             <button onclick="pixieFunction()">Copy</button>
         </div>
 
+        <div id="wesker" class="muse">
+            <p class="museName">wesker</p>
+            <input type="text" value="<span style='color: #487eb0'>" id="weskerInput">
+            <button onclick="weskerFunction()">Copy</button>
+        </div>
+
 
 <!--
         <div id="steve" class="muse">
@@ -133,6 +139,20 @@
     </div>
 
     <script>
+        function andrewFunction() {
+            var copyText = document.getElementById("andrewInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function boothillFunction() {
+            var copyText = document.getElementById("boothillInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+        
         function bruceFunction() {
             var copyText = document.getElementById("bruceInput");
             copyText.select();
@@ -142,13 +162,6 @@
         
         function clintFunction() {
             var copyText = document.getElementById("clintInput");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999)
-            document.execCommand("copy");
-        }
-
-        function cassidyFunction() {
-            var copyText = document.getElementById("cassidyInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");
@@ -184,6 +197,13 @@
 
         function pixieFunction() {
             var copyText = document.getElementById("pixieInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function weskerFunction() {
+            var copyText = document.getElementById("weskerInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");

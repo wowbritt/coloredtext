@@ -92,6 +92,12 @@
             <button onclick="danielFunction()">Copy</button>
         </div>
 
+        <div id="gale" class="muse">
+            <p class="museName">gale</p>
+            <input type="text" value="<span style='color: #602F45'>" id="galeInput">
+            <button onclick="galeFunction()">Copy</button>
+        </div>
+
         <div id="irey" class="muse">
             <p class="museName">irey</p>
             <input type="text" value="<span style='color: #f8a5c2'>" id="ireyInput">
@@ -163,6 +169,13 @@
 
         function danielFunction() {
             var copyText = document.getElementById("danielInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function galeFunction() {
+            var copyText = document.getElementById("galeInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");

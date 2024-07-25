@@ -45,11 +45,11 @@
             overflow: auto;
             position: absolute;
             left: 42%;
-            top: 10%;
+            top: 5%;
         }
 
         .muse {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .museName {
@@ -86,6 +86,12 @@
             <button onclick="clintFunction()">Copy</button>
         </div>
 
+        <div id="danny" class="muse">
+            <p class="museName">danny</p>
+            <input type="text" value="<span style='color: #b92216'>" id="dannyInput">
+            <button onclick="dannyFunction()">Copy</button>
+        </div>
+
         <div id="daniel" class="muse">
             <p class="museName">daniel</p>
             <input type="text" value="<span style='color: #317fe6'>" id="danielInput">
@@ -104,11 +110,7 @@
                 <button onclick="ireyFunction()">Copy</button>
         </div>
 
-        <div id="levi" class="muse">
-            <p class="museName">levi</p>
-            <input type="text" value="<span style='color: #ea8685'>" id="leviInput">
-            <button onclick="leviFunction()">Copy</button>
-        </div>
+
 
         <div id="margaery" class="muse">
             <p class="museName">margaery</p>
@@ -120,6 +122,12 @@
             <p class="museName">pixie</p>
             <input type="text" value="<span style='color: #E37BAC'>" id="pixieInput">
             <button onclick="pixieFunction()">Copy</button>
+        </div>
+
+        <div id="steve" class="muse">
+            <p class="museName">steve</p>
+            <input type="text" value="<span style='color: #1B9CFC'>" id="steveInput">
+            <button onclick="steveFunction()">Copy</button>
         </div>
 
         <div id="wesker" class="muse">
@@ -188,8 +196,8 @@
             document.execCommand("copy");
         }
 
-        function leviFunction() {
-            var copyText = document.getElementById("leviInput");
+        function dannyFunction() {
+            var copyText = document.getElementById("dannyInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");
@@ -204,6 +212,13 @@
 
         function pixieFunction() {
             var copyText = document.getElementById("pixieInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function steveFunction() {
+            var copyText = document.getElementById("steveInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");

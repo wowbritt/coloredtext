@@ -68,6 +68,12 @@
             <button onclick="andrewFunction()">Copy</button>
         </div>
 
+        <div id="blade" class="muse">
+            <p class="museName">blade</p>
+            <input type="text" value="<span style='color: #1f567a'>" id="bladeInput">
+            <button onclick="bladeFunction()">Copy</button>
+        </div>
+
         <div id="boothill" class="muse">
             <p class="museName">boothill</p>
             <input type="text" value="<span style='color: #C2032F'>" id="boothillInput">
@@ -86,16 +92,16 @@
             <button onclick="clintFunction()">Copy</button>
         </div>
 
-        <div id="danny" class="muse">
-            <p class="museName">danny</p>
-            <input type="text" value="<span style='color: #b92216'>" id="dannyInput">
-            <button onclick="dannyFunction()">Copy</button>
-        </div>
-
         <div id="daniel" class="muse">
             <p class="museName">daniel</p>
             <input type="text" value="<span style='color: #317fe6'>" id="danielInput">
             <button onclick="danielFunction()">Copy</button>
+        </div>
+
+        <div id="danny" class="muse">
+            <p class="museName">danny</p>
+            <input type="text" value="<span style='color: #b92216'>" id="dannyInput">
+            <button onclick="dannyFunction()">Copy</button>
         </div>
 
         <div id="gale" class="muse">
@@ -109,8 +115,6 @@
             <input type="text" value="<span style='color: #f8a5c2'>" id="ireyInput">
                 <button onclick="ireyFunction()">Copy</button>
         </div>
-
-
 
         <div id="margaery" class="muse">
             <p class="museName">margaery</p>
@@ -149,6 +153,13 @@
     <script>
         function andrewFunction() {
             var copyText = document.getElementById("andrewInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function bladeFunction() {
+            var copyText = document.getElementById("bladeInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");

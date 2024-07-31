@@ -22,13 +22,13 @@
 
         button {
             font-family: ABeeZee;
-            font-size: 13px;
+            font-size: 10px;
 
             background-color: #f5c2e7;
             color: #181825;
             border-radius: 5px;
             padding: 5px;
-            width: 80px;
+            width: 50px;
         }
 
         input {
@@ -36,24 +36,37 @@
             font-size: 13px;
             color: black;
 
-            width: 225px;
+            width: 200px;
         }
 
         #container {
-            width: 500px;
+            /* width: 500px; */
             height: auto;
             overflow: auto;
             position: absolute;
-            left: 42%;
+            left: 30%;
             top: 5%;
         }
 
         .muse {
             margin-bottom: 10px;
+            margin-right: 30px;
         }
 
         .museName {
             margin-bottom: 5px;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+    /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
         }
     </style>
 </head>
@@ -61,7 +74,7 @@
 <body>
 
     <div id="container">
-
+        <div class="column">
         <div id="andrew" class="muse">
             <p class="museName">andrew</p>
             <input type="text" value="<span style='color: #893A35'>" id="andrewInput">
@@ -91,7 +104,7 @@
             <input type="text" value="<span style='color: #6a5d80'>" id="clintInput">
             <button onclick="clintFunction()">Copy</button>
         </div>
-
+        
         <div id="daniel" class="muse">
             <p class="museName">daniel</p>
             <input type="text" value="<span style='color: #317fe6'>" id="danielInput">
@@ -110,18 +123,27 @@
             <button onclick="galeFunction()">Copy</button>
         </div>
 
+        <div id="grant" class="muse">
+            <p class="museName">grant</p>
+            <input type="text" value="<span style='color: #e67e22'>" id="grantInput">
+            <button onclick="grantFunction()">Copy</button>
+        </div>
+
         <div id="irey" class="muse">
             <p class="museName">irey</p>
             <input type="text" value="<span style='color: #f8a5c2'>" id="ireyInput">
                 <button onclick="ireyFunction()">Copy</button>
         </div>
 
+    </div>
+    <div class="column">
+
         <div id="margaery" class="muse">
             <p class="museName">margaery</p>
             <input type="text" value="<span style='color: #78e08f'>" id="margaeryInput">
             <button onclick="margaeryFunction()">Copy</button>
         </div>
-
+        
         <div id="pixie" class="muse">
             <p class="museName">pixie</p>
             <input type="text" value="<span style='color: #E37BAC'>" id="pixieInput">
@@ -140,6 +162,12 @@
             <button onclick="weskerFunction()">Copy</button>
         </div>
 
+        <div id="zhongli" class="muse">
+            <p class="museName">zhongli</p>
+            <input type="text" value="<span style='color: #ffb73f'>" id="zhongliInput">
+            <button onclick="zhongliFunction()">Copy</button>
+        </div>
+        </div>
 
 <!--
         <div id="steve" class="muse">
@@ -200,6 +228,13 @@
             document.execCommand("copy");
         }
 
+        function grantFunction() {
+            var copyText = document.getElementById("grantInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
         function ireyFunction() {
             var copyText = document.getElementById("ireyInput");
             copyText.select();
@@ -237,6 +272,13 @@
 
         function weskerFunction() {
             var copyText = document.getElementById("weskerInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function zhongliFunction() {
+            var copyText = document.getElementById("zhongliInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");

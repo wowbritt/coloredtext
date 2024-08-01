@@ -138,6 +138,12 @@
     </div>
     <div class="column">
 
+        <div id="kermit" class="muse">
+            <p class="museName">kermit</p>
+            <input type="text" value="<span style='color: #44bd32'>" id="kermitInput">
+            <button onclick="kermitFunction()">Copy</button>
+        </div>
+        
         <div id="margaery" class="muse">
             <p class="museName">margaery</p>
             <input type="text" value="<span style='color: #78e08f'>" id="margaeryInput">
@@ -221,6 +227,13 @@
             document.execCommand("copy");
         }
 
+        function dannyFunction() {
+            var copyText = document.getElementById("dannyInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
         function galeFunction() {
             var copyText = document.getElementById("galeInput");
             copyText.select();
@@ -242,8 +255,8 @@
             document.execCommand("copy");
         }
 
-        function dannyFunction() {
-            var copyText = document.getElementById("dannyInput");
+        function kermitFunction() {
+            var copyText = document.getElementById("kermitInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");

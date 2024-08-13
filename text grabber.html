@@ -99,6 +99,12 @@
             <button onclick="bruceFunction()">Copy</button>
         </div> -->
 
+        <div id="bucky" class="muse">
+            <p class="museName">bucky</p>
+            <input type="text" value="<span style='color: #1e8bc3'>" id="buckyInput">
+            <button onclick="buckyFunction()">Copy</button>
+        </div>
+
         <div id="cindy" class="muse">
             <p class="museName">cindy</p>
             <input type="text" value="<span style='color: #B53471'>" id="cindyInput">
@@ -141,11 +147,7 @@
                 <button onclick="ireyFunction()">Copy</button>
         </div>
 
-        <div id="james" class="muse">
-            <p class="museName">james</p>
-            <input type="text" value="<span style='color: #1e3799'>" id="jamesInput">
-                <button onclick="jamesFunction()">Copy</button>
-        </div>
+        
 
     </div>
     <div class="column">
@@ -155,6 +157,12 @@
             <input type="text" value="<span style='color: #44bd32'>" id="kermitInput">
             <button onclick="kermitFunction()">Copy</button>
         </div> -->
+
+        <div id="james" class="muse">
+            <p class="museName">james</p>
+            <input type="text" value="<span style='color: #1e3799'>" id="jamesInput">
+                <button onclick="jamesFunction()">Copy</button>
+        </div>
         
         <div id="jingyuan" class="muse">
             <p class="museName">jingyuan</p>
@@ -193,13 +201,8 @@
         </div>
         </div>
 
-<!--
-        <div id="steve" class="muse">
-            <p class="museName">steve</p>
-            <input type="text" value="<span style='color: #1e8bc3'>" id="steveInput">
-            <button onclick="steveFunction()">Copy</button>
-        </div>
-    -->
+        
+
     </div>
 
     <script>
@@ -226,6 +229,13 @@
         
         function bruceFunction() {
             var copyText = document.getElementById("bruceInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function buckyFunction() {
+            var copyText = document.getElementById("buckyInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");

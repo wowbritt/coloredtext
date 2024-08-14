@@ -141,12 +141,12 @@
             <button onclick="grantFunction()">Copy</button>
         </div>
 
-        <div id="irey" class="muse">
-            <p class="museName">irey</p>
-            <input type="text" value="<span style='color: #f8a5c2'>" id="ireyInput">
-                <button onclick="ireyFunction()">Copy</button>
+        <div id="harwin" class="muse">
+            <p class="museName">harwin</p>
+            <input type="text" value="<span style='color: #3B3B98'>" id="harwinInput">
+                <button onclick="harwinFunction()">Copy</button>
         </div>
-
+        
         
 
     </div>
@@ -158,6 +158,12 @@
             <button onclick="kermitFunction()">Copy</button>
         </div> -->
 
+        <div id="irey" class="muse">
+            <p class="museName">irey</p>
+            <input type="text" value="<span style='color: #f8a5c2'>" id="ireyInput">
+                <button onclick="ireyFunction()">Copy</button>
+        </div>
+        
         <div id="james" class="muse">
             <p class="museName">james</p>
             <input type="text" value="<span style='color: #1e3799'>" id="jamesInput">
@@ -278,6 +284,13 @@
 
         function grantFunction() {
             var copyText = document.getElementById("grantInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+        
+        function harwinFunction() {
+            var copyText = document.getElementById("harwinInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");

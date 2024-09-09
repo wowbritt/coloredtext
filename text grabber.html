@@ -87,6 +87,12 @@
             <button onclick="bladeFunction()">Copy</button>
         </div> -->
 
+        <div id="becca" class="muse">
+            <p class="museName">becca</p>
+            <input type="text" value="<span style='color: #a96dad'>" id="beccaInput">
+            <button onclick="beccaFunction()">Copy</button>
+        </div>
+
         <div id="boothill" class="muse">
             <p class="museName">boothill</p>
             <input type="text" value="<span style='color: #C2032F'>" id="boothillInput">
@@ -135,11 +141,7 @@
             <button onclick="galeFunction()">Copy</button>
         </div>
 
-        <div id="grant" class="muse">
-            <p class="museName">grant</p>
-            <input type="text" value="<span style='color: #e67e22'>" id="grantInput">
-            <button onclick="grantFunction()">Copy</button>
-        </div>
+        
 
         
         
@@ -153,6 +155,12 @@
             <input type="text" value="<span style='color: #44bd32'>" id="kermitInput">
             <button onclick="kermitFunction()">Copy</button>
         </div> -->
+
+        <div id="grant" class="muse">
+            <p class="museName">grant</p>
+            <input type="text" value="<span style='color: #e67e22'>" id="grantInput">
+            <button onclick="grantFunction()">Copy</button>
+        </div>
 
         <div id="harwin" class="muse">
             <p class="museName">harwin</p>
@@ -216,6 +224,13 @@
     <script>
         function andrewFunction() {
             var copyText = document.getElementById("andrewInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function beccaFunction() {
+            var copyText = document.getElementById("beccaInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");

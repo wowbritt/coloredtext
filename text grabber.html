@@ -135,12 +135,11 @@
             <button onclick="dannyFunction()">Copy</button>
         </div>
 
-        <div id="gale" class="muse">
-            <p class="museName">gale</p>
-            <input type="text" value="<span style='color: #602F45'>" id="galeInput">
-            <button onclick="galeFunction()">Copy</button>
+        <div id="erwin" class="muse">
+            <p class="museName">erwin</p>
+            <input type="text" value="<span style='color: #38483D'>" id="erwinInput">
+            <button onclick="erwinFunction()">Copy</button>
         </div>
-
         
 
         
@@ -155,6 +154,12 @@
             <input type="text" value="<span style='color: #44bd32'>" id="kermitInput">
             <button onclick="kermitFunction()">Copy</button>
         </div> -->
+
+        <div id="gale" class="muse">
+            <p class="museName">gale</p>
+            <input type="text" value="<span style='color: #602F45'>" id="galeInput">
+            <button onclick="galeFunction()">Copy</button>
+        </div>
 
         <div id="grant" class="muse">
             <p class="museName">grant</p>
@@ -174,11 +179,11 @@
                 <button onclick="ireyFunction()">Copy</button>
         </div>
         
-        <div id="james" class="muse">
+        <!-- <div id="james" class="muse">
             <p class="museName">james</p>
             <input type="text" value="<span style='color: #1e3799'>" id="jamesInput">
                 <button onclick="jamesFunction()">Copy</button>
-        </div>
+        </div> -->
         
         <div id="jingyuan" class="muse">
             <p class="museName">jingyuan</p>
@@ -198,11 +203,11 @@
             <button onclick="pixieFunction()">Copy</button>
         </div>
 
-        <div id="steve" class="muse">
+        <!-- <div id="steve" class="muse">
             <p class="museName">steve</p>
             <input type="text" value="<span style='color: #1B9CFC'>" id="steveInput">
             <button onclick="steveFunction()">Copy</button>
-        </div>
+        </div> -->
 
         <div id="wesker" class="muse">
             <p class="museName">wesker</p>
@@ -287,6 +292,13 @@
 
         function dannyFunction() {
             var copyText = document.getElementById("dannyInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+        }
+
+        function erwinFunction() {
+            var copyText = document.getElementById("erwinInput");
             copyText.select();
             copyText.setSelectionRange(0, 99999)
             document.execCommand("copy");
